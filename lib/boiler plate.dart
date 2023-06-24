@@ -6,16 +6,7 @@ class circle extends StatelessWidget {
   circle({super.key});
 
   final controller1 = TextEditingController();
-
-  int result = 0, num1 = 0;
-
-  // add() {
-  //   setState(() {
-  //     num1 = int.parse(controller1.text);
-
-  //     result = 3.14 * num1 * num1;
-  //   });
-  // }
+  final controller2 = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -35,11 +26,24 @@ class circle extends StatelessWidget {
           TextField(
             controller: controller1,
             decoration: const InputDecoration(
-                labelText: "Enter Radius Number",
+                labelText: "Enter First Number",
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20)))),
           ),
-          ElevatedButton(onPressed: () {}, child: const Text("Calculate"))
+          const SizedBox(
+            height: 20,
+          ),
+          TextField(
+            controller: controller2,
+            decoration: const InputDecoration(
+                labelText: "Enter Second Number",
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20)))),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          ElevatedButton(onPressed: () {}, child: const Text("Add"))
         ],
       ),
     );

@@ -1,6 +1,9 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 
+import 'circle.dart';
+import 'circle1.dart';
+
 // ignore: camel_case_types
 class areaofCalculations extends StatelessWidget {
   const areaofCalculations({super.key});
@@ -18,7 +21,12 @@ class areaofCalculations extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const circle1()),
+                    );
+                  },
                   child: const Text('Circle'),
                 ),
                 ElevatedButton(
