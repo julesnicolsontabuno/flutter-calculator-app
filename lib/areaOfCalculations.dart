@@ -1,8 +1,8 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 
-import 'circle.dart';
 import 'circle1.dart';
+import 'rectangleSquare.dart';
 
 // ignore: camel_case_types
 class areaofCalculations extends StatelessWidget {
@@ -30,8 +30,14 @@ class areaofCalculations extends StatelessWidget {
                   child: const Text('Circle'),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
-                  child: const Text('Rectangle'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => rectangleSquare()),
+                    );
+                  },
+                  child: const Text('Rectangle or Square'),
                 ),
                 ElevatedButton(
                   onPressed: () {},

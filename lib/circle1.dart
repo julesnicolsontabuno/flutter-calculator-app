@@ -1,9 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
+// ignore: camel_case_types
 class circle1 extends StatefulWidget {
   const circle1({super.key});
 
@@ -30,7 +29,7 @@ class _circle1State extends State<circle1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('First Page'),
+        title: const Text('Circle'),
       ),
       body: Column(
         children: [
